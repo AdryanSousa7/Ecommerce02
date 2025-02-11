@@ -2,72 +2,70 @@ package com.senai.ecommerce.dto;
 
 import com.senai.ecommerce.entities.Produto;
 
-public class ProdutoDTO{
-		
-	private Long id;
-	private String nome;
-	private String descricao;
-	private Double preco;
-	private String imgUrl;
-	
-	public ProdutoDTO() {
-		
-	}
-	
-	public ProdutoDTO(long id, String nome, String descricao, Double preco, String imgUrl) {
-		this.id = id;
-		this.nome = nome;
-		this.descricao = descricao;
-		this.preco = preco;
-		this.imgUrl = imgUrl;
-	}
-	
-	public ProdutoDTO(Produto p) {
-		id = p.getId();
-		nome = p.getNome();
-		descricao = p.getDescricao();
-		preco = p.getPreco();
-		imgUrl = p.getImgUrl();
-	}
+public class ProdutoDTO {
 
-	public Long getId() {
-		return id;
-	}
+    private Long id;
+    private String nome;
+    private String descricao;
+    private Double preco;  
+    private String imgUrl;
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public ProdutoDTO() {
+    }
 
-	public String getNome() {
-		return nome;
-	}
+    public ProdutoDTO(Long id, String nome, String descricao, Double preco, String imgUrl) {
+        this.id = id;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.preco = preco;
+        this.imgUrl = imgUrl;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    public ProdutoDTO(Produto p) {
+        this.id = p.getId();
+        this.nome = p.getNome();
+        this.descricao = p.getDescricao();
+        this.preco = p.getPreco();  
+        this.imgUrl = p.getImgUrl();
+    }
 
-	public String getDescricao() {
-		return descricao;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public Double getPreco() {
-		return preco;
-	}
+    public String getNome() {
+        return nome;
+    }
 
-	public void setPreco(Double preco) {
-		this.preco = preco;
-	}
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-	public String getImgUrl() {
-		return imgUrl;
-	}
+    public String getDescricao() {
+        return descricao;
+    }
 
-	public void setImgUrl(String imgUrl) {
-		this.imgUrl = imgUrl;
-	}
-	
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
 }
